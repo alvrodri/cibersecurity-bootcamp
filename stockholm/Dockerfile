@@ -7,6 +7,7 @@ RUN			chmod 700 /entrypoint.sh
 
 WORKDIR		/var/app
 COPY		./bin/stockholm .
+COPY		./includes/extensions.json .
 RUN			chmod 700 stockholm
 
 ENTRYPOINT [ "/entrypoint.sh" ]
